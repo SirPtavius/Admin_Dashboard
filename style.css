@@ -53,12 +53,12 @@ li {
 }
 
 .header {
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 0px 6px 24px -15px #111; /*to fix*/
   display: grid;
   grid-template-columns: 2fr 0.7fr;
   grid-template-rows: 1fr 1fr;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .rightProfile {
   grid-column: 2/2;
@@ -77,7 +77,6 @@ li {
 }
 .leftImage {
   height: 80px;
-  grid-template-columns: 1/2;
   align-self: center;
 }
 .leftText {
@@ -100,5 +99,26 @@ button {
   color: white;
   font-weight: bold;
 }
+
 .main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 0fr 4fr;
+  padding: 20px;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  gap: 20px;
+}
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 3px 5px 5px 2px #ccc;
+}
+.cardLinks {
+  display: flex;
+  justify-content: end;
 }
