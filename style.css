@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+}
+/*SIDEBAR*/
+.sidebar {
+  background-color: aqua;
+  grid-area: 1/ 1 / 4 / 2;
+  display: grid;
+}
+
+.logo {
+  height: 50px;
+}
+
+.header {
+  background-color: blueviolet;
+}
+.main {
+  background-color: brown;
+}
