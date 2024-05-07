@@ -92,17 +92,18 @@ body {
   color: white;
   font-weight: 900;
   font-size: 20px;
-  padding-left: 20px;
+  justify-content: center;
 }
 
 .logo {
-  height: 80px;
+  height: 80px !important;
 }
 #dashboard {
   font-size: 25px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   align-items: center;
+  padding-top: 25px;
 }
 
 img {
@@ -111,6 +112,8 @@ img {
 
 ul {
   list-style: none;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 ul img {
   filter: invert(100%);
@@ -120,6 +123,11 @@ li {
   grid-template-columns: 0.5fr 3fr;
   align-items: center;
   gap: 10px;
+  padding: 5px;
+}
+li:hover img {
+  height: 40px;
+  transition: 0.35s;
 }
 li img {
   height: 30px;
@@ -154,8 +162,11 @@ li img {
 }
 .searchBar {
   border-radius: 50px;
-  border: 1px solid grey;
+  border: none;
   height: 25px;
+}
+input:hover {
+  border: 1px solid gray;
 }
 
 .rightProfile {
@@ -164,9 +175,12 @@ li img {
   justify-self: end;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   font-size: 20px;
   font-weight: bold;
+}
+.rightProfile img {
+  height: 30px;
 }
 .leftProfile {
   display: grid;
@@ -197,7 +211,14 @@ button {
   color: white;
   font-weight: bold;
 }
-
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+button:active {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
 .main {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -219,6 +240,10 @@ button {
   display: grid;
   border-left: 10px solid #f0b429;
 }
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
 .cardLinks {
   display: flex;
   justify-content: end;
@@ -226,6 +251,14 @@ button {
   padding: 20px;
   padding-bottom: 0;
   gap: 20px;
+}
+.cardLinks img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.cardLinks img:active {
+  transform: scale(0.9);
+  transition: 0.3s;
 }
 .announcementSection {
   display: grid;
@@ -240,10 +273,13 @@ button {
   grid-template-columns: repeat(1fr, 3);
   gap: 20px;
 }
+.announcementCard div:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
 .midDiv {
   border-bottom: rgb(187, 187, 187) 1px solid;
   border-top: rgb(187, 187, 187) 1px solid;
-
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -254,4 +290,8 @@ button {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 3px 5px 5px 2px #ccc;
+}
+.trendingSection div:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
 }
