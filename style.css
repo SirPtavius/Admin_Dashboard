@@ -194,6 +194,15 @@ input:hover {
 .leftText {
   align-self: center;
 }
+.leftText p:nth-child(1) {
+  font-size: 15px;
+  font-weight: bold;
+}
+.leftText p:nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .buttonSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -273,6 +282,10 @@ button:active {
   grid-template-columns: repeat(1fr, 3);
   gap: 20px;
 }
+.announcementCard p {
+  font-size: 14px;
+  color: gray;
+}
 .announcementCard div:hover {
   transform: scale(1.02);
   transition: 0.3s;
@@ -294,4 +307,11 @@ button:active {
 .trendingSection div:hover {
   transform: scale(1.02);
   transition: 0.3s;
+}
+.trendingSection .leftText > p:first-child {
+  font-size: 14px;
+}
+.trendingSection .leftText > p:last-child {
+  font-size: 15px;
+  color: gray;
 }
