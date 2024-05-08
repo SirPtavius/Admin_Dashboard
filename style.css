@@ -175,7 +175,10 @@ li img {
 input:hover {
   border: 1px solid gray;
 }
-
+#ring:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 .rightProfile {
   grid-column: 2/2;
   align-self: center;
@@ -251,7 +254,6 @@ button:active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
   gap: 20px;
 }
 .card {
